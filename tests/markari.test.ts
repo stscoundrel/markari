@@ -33,4 +33,11 @@ describe('Markari tests', () => {
     const result = markWords('you', original);
     expect(result).toEqual(expected);
   });
+
+  test('Marks multiword queries', () => {
+    const original = 'And if the day would only come, then you might just appear, even though you\'d soon be gone';
+    const expected = '<mark>And if the day would only come</mark>, then you might just appear, even though you\'d soon be gone';
+    const result = markWords('And if the day would only come', original);
+    expect(result).toEqual(expected);
+  });
 });
