@@ -1,6 +1,6 @@
-name: Build
+name: Lint
 
-on: [push, pull_request]
+on: [pull_request]
 
 jobs:
   build:
@@ -13,11 +13,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Build with Node.js ${{ matrix.node-version }}
+    - name: Test with Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
     - run: yarn install --production=false
-    - run: yarn build
+    - run: yarn lint
       env:
         CI: true

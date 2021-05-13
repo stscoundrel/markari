@@ -36,8 +36,8 @@
     "lint": "eslint .",
     "fix": "eslint . --fix",
     "jest": "jest --verbose --runInBand --passWithNoTests",
-    "test": "yarn lint && yarn jest",
+    "test:unit": "yarn jest",
     "build": "tsc",
-    "prepublishOnly": "yarn build && yarn test"
+    "prepublishOnly": "yarn build && yarn lint && yarn test:unit"
   }
 }
