@@ -40,4 +40,15 @@ describe('Markari tests', () => {
     const result = markWords('And if the day would only come', original);
     expect(result).toEqual(expected);
   });
+
+  test('Handles empty string correctly', () => {
+    const search = '';
+    const content = 'Lorem ipsum dolor sit amet dolor sit igitur';
+
+    const expected = 'Lorem ipsum dolor sit amet dolor sit igitur';
+
+    const result = markWords(search, content);
+
+    expect(result).toEqual(expected);
+  });
 });
