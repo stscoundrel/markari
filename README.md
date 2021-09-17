@@ -18,7 +18,7 @@ const original = 'And if the day would only come, then you might just appear, ev
  */
 const result = markWords('you', original);
 console.log(result)
-// And if the <mark>day</mark> would only come, then you might just appear, even though you\'d soon be gone
+// And if the day would only come, then <mark>you</mark> might just appear, even though <mark>you</mark>\'d soon be gone
 
 /**
  * Can wrap whole sentences.
