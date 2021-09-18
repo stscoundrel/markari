@@ -51,4 +51,18 @@ describe('Markari tests', () => {
 
     expect(result).toEqual(expected);
   });
+
+  test('Does not abbreviate content inside other mark tags.', () => {
+    const original = 'Lorem ipsum dolor <strong>sit</strong> amet dolor <mark>sit</mark> igitur';
+    const expected = 'Lorem ipsum dolor <strong><mark>sit</mark></strong> amet dolor <mark>sit</mark> igitur';
+    const result = markWords('sit', original);
+    expect(result).toEqual(expected);
+  });
+
+  test('Does not abbreviate content inside html attributes.', () => {
+    const original = 'Lorem ipsum dolor sit amet dolor <abbr title="fake latin sit">sit</abbr> igitur';
+    const expected = 'Lorem ipsum dolor <mark>sit</mark> amet dolor <abbr title="fake latin sit"><mark>sit</mark></abbr> igitur';
+    const result = markWords('sit', original);
+    expect(result).toEqual(expected);
+  });
 });
