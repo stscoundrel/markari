@@ -2295,9 +2295,9 @@ eslint-plugin-import@^2.23.4:
     tsconfig-paths "^3.11.0"
 
 eslint-plugin-jest@^25.2.2:
-  version "25.2.2"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-25.2.2.tgz#aada85113268e79d4e7423f8ad4e1b740f112e71"
-  integrity sha512-frn5yhOF60U4kcqozO3zKTNZQUk+mfx037XOy2iiYL8FhorEkuCuL3/flzKcY1ECDP2WYT9ydmvlO3fRW9o4mg==
+  version "25.3.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-25.3.0.tgz#6c04bbf13624a75684a05391a825b58e2e291950"
+  integrity sha512-79WQtuBsTN1S8Y9+7euBYwxIOia/k7ykkl9OCBHL3xuww5ecursHy/D8GCIlvzHVWv85gOkS5Kv6Sh7RxOgK1Q==
   dependencies:
     "@typescript-eslint/experimental-utils" "^5.0.0"
 
@@ -2840,13 +2840,6 @@ is-generator-fn@^2.0.0:
   integrity sha512-cTIB4yPYL/Grw0EaSzASzg6bBy9gqCofvWN8okThAYIxKJZC+udlRAmGbM0XLeniEJSs8uEgHPGuHSe1XsOLSQ==
 
 is-glob@^4.0.0, is-glob@^4.0.1, is-glob@^4.0.3:
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/is-glob/-/is-glob-4.0.3.tgz#64f61e42cbbb2eec2071a9dac0b28ba1e65d5084"
-  integrity sha512-xelSayHH36ZgE7ZWhli7pW34hNbNl8Ojv5KVmkJD4hBdD3th8Tfk9vYasLM+mXWOZhFkgZfxhLSnrwRr4elSSg==
-  dependencies:
-    is-extglob "^2.1.1"
-
-is-glob@^4.0.3:
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/is-glob/-/is-glob-4.0.3.tgz#64f61e42cbbb2eec2071a9dac0b28ba1e65d5084"
   integrity sha512-xelSayHH36ZgE7ZWhli7pW34hNbNl8Ojv5KVmkJD4hBdD3th8Tfk9vYasLM+mXWOZhFkgZfxhLSnrwRr4elSSg==
